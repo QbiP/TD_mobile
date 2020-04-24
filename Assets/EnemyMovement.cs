@@ -16,7 +16,5 @@ public class EnemyMovement : MonoBehaviour
     {
         rb.MovePosition(transform.position + movementspeed * Time.fixedDeltaTime);
     }
-
-    // Update is called once per frame
    
 }
