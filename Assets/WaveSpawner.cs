@@ -29,7 +29,6 @@ public class WaveSpawner : MonoBehaviour
     void SpawnEnemy (int x, int y)
     {
         Color pixelcolor = WaveSpawnMap.GetPixel(x, y);
-        Debug.Log(pixelcolor);
         foreach (ColorToEnemy colorMapping in colorToEnemy)
         {
             if (colorMapping.color.Equals(pixelcolor))
