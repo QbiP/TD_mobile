@@ -15,17 +15,17 @@ public class Menu : MonoBehaviour
     {
         GameObject EnemyPrefab = GameObject.Find("Enemy");
         Contact scorescript = EnemyPrefab.GetComponent<Contact>();
-        scorescript.points = 0f;
+        scorescript.points = 0;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        oints.text = ("Points: " + scorescript.points);
-        if (scorescript.points == 10)
-        {
-            WinScreen.SetActive(true);
-        }
+    //void Update()
+    //{
+    //    //oints.text = ("Points: " + scorescript.points);
+    //    if (scorescript.points == 10)
+    //    {
+    //        WinScreen.SetActive(true);
+    //    }
 
-    }
+    //}
 }

@@ -11,12 +11,16 @@ public class Contact : MonoBehaviour
     [SerializeField] private GameObject Enemy;
     [SerializeField] private Transform EnemySpawn;
     [SerializeField] public TextMeshProUGUI oints;
-    [SerializeField] public float points;
+    [SerializeField] public int points;
     [SerializeField] GameObject WinScreen;
+    private PointsHandler pointshandler;
 
 
-
-    private void Update()
+    void Awake()
+    {
+        pointshandler = GameObject.FindObjectOfType<PointsHandler>();
+    }
+        private void Update()
     {
         //oints.text = points.ToString();
         oints.text = ("Points: " + points);
@@ -33,10 +37,11 @@ public class Contact : MonoBehaviour
 
         if (col.gameObject.tag == "Bullet")
         {
-            points ++;
+            //pointshandler.UpdatePoints(points);
+            //points ++;
             Debug.Log("Enemy hit!");
             
-            PointsUp();
+           // PointsUp();
             col.gameObject.SetActive(false);
             CreateNewEnemy();
             this.gameObject.SetActive(false);

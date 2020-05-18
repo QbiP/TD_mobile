@@ -122,7 +122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 1717896437733213389}
-  EnemySpawn: {fileID: 0}
+  EnemySpawn: {fileID: 2200285649115016936, guid: 22fa93a241c66cf4ab0a5330801eba2a,
+    type: 3}
   oints: {fileID: 0}
   points: 0
   WinScreen: {fileID: 0}
