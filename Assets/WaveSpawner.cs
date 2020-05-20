@@ -33,7 +33,7 @@ public class WaveSpawner : MonoBehaviour
         {
             if (colorMapping.color.Equals(pixelcolor))
             {
-                Instantiate(colorMapping.Enemys[Random.Range(0, colorMapping.Enemys.Length)], this.transform);
+                Instantiate(colorMapping.Enemys[Random.Range(0, colorMapping.Enemys.Length)], this.transform.position, this.transform.rotation);
             }
         }
     }
