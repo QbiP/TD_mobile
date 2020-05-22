@@ -23,7 +23,7 @@ public class Contact : MonoBehaviour
         private void Update()
     {
         //oints.text = points.ToString();
-        oints.text = ("Points: " + points);
+        //oints.text = ("Points: " + points);
     }
 
     // Update is called once per frame
